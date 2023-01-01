@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <head></head>
+    <body>
+        Enter 1st nuumber<input type="textbox" name="a" id="num1"><br>
+        Enter 2nd nuumber<input type="textbox" name="b" id="num2"><br>
+        <input type="button"value="sum" name="sum" onclick="calculateSum()">
+        <input type="button"value="sub" name="sum" onclick="calculateSub()">
+        <input type="button"value="multiplication" name="mul" onclick="calculateMul()">
+        <input type="button"value="division" name="div" onclick="calculateDiv()"><br>
+        <label>Result:-</label><span id="result"></span>
+        <script>
+            function calculateSum(){
+                console.log("click");
+                var num1=document.getElementById("num1").value;
+                var num2=document.getElementById("num2").value;
+                num1=Number(num1);
+                num2=Number(num2);
+
+                var sum=num1+num2;
+                document.getElementById("result").innerText=sum;
+                document.getElementById("num1").value="";
+                document.getElementById("num2").value="";
+            }
+            function calculateSub(){
+                console.log("click");
+                var num1=document.getElementById("num1").value;
+                var num2=document.getElementById("num2").value;
+                num1=Number(num1);
+                num2=Number(num2);
+                var sub=num1-num2;
+                document.getElementById("result").innerText=sub;
+                document.getElementById("num1").value="";
+                document.getElementById("num2").value="";
+            }
+            function calculateMul(){
+                console.log("click");
+                var num1=document.getElementById("num1").value;
+                var num2=document.getElementById("num2").value;
+                num1=Number(num1);
+                num2=Number(num2);
+                var mul=num1*num2;
+                document.getElementById("result").innerText=mul;
+                document.getElementById("num1").value="";
+                document.getElementById("num2").value="";
+            }
+            function calculateDiv(){
+                console.log("click");
+                var num1=document.getElementById("num1").value;
+                var num2=document.getElementById("num2").value;
+                num1=Number(num1);
+                num2=Number(num2);
+                var div=num1/num2;
+                document.getElementById("result").innerText=div;
+                document.getElementById("num1").value="";
+                document.getElementById("num2").value="";
+            }
+        </script>
+    </body>
+</html>
