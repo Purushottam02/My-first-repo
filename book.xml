@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding ='UTF-8' ?>
+<bookstore>   <books info="technical">
+                                <book_no>1</book_no>
+                                <book_name>JAVA</book_name>
+                                <author_name>JAMES GOSLING</author_name>
+                                <price>100</price>
+                                <year>1990</year> </books>
+                <books info="Cooking">
+                                <book_no>2</book_no>
+                                <book_name>RUCHIRA</book_name>
+                                <author_name>AISHWARYA</author_name>
+                                <price>200</price>
+                                <year>1950</year> </books> 
+                <books info="YOGA">
+                                <book_no>3</book_no>
+                                <book_name>YOGASAN</book_name>
+                                <author_name>RAMDEV BABA</author_name>
+                                <price>150</price>
+                                <year>2016</year>  </books>
+                <books info="technical">
+                                <book_no>4</book_no>
+                                <book_name>C++</book_name>
+                                <author_name>bALGURU SWAMI</author_name>
+                                <price>100</price>
+                                <year>1990</year>  </books>
+                <books info="technical">
+                                <book_no>5</book_no>
+                                <book_name>AGNIPANKH</book_name>
+                                <author_name>ABJ KALAM</author_name>
+                                <price>100</price>
+                                <year>1990</year> </books>
+</bookstore>

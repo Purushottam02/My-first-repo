@@ -1,0 +1,47 @@
+<html>
+
+<head></head>
+<style>
+    .circle {
+        height: 100px;
+        width: 100px;
+        border: 1px solid red;
+        border-radius: 50%;
+        position: absolute;
+        /* top: 0px; */
+    }
+
+    .wrapper {
+        position: relative;
+    }
+</style>
+
+<body>
+    <h1>hello</h1>
+    <div id="#" class="wrapper">
+        <div id="circle" class="circle"></div>
+    </div>
+    <center>
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+    </center>
+</body>
+<script>
+    console.log("click");
+    var pid;
+    var top1 = 0;
+    function start() {
+        pid = setInterval(function () {
+            const circleElement = document.getElementById('circle');
+            console.log(top1);
+            top1 += 50;
+
+            circleElement.style.left = top1 + 'px';
+        }, 1000);
+    }
+    function stop() {
+        clearInterval(pid);
+    }
+</script>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+    function check_vowel() {
+
+        var n = document.getElementById("t1").value;
+        var i, ch, cnt = 0;
+        for (i = 0; i < n.length; i++) {
+            ch = n.charAt(i);
+            if (ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E' || ch == 'i' || ch == 'I' || ch == 'o' || ch == 'O' || ch == 'u' || ch == 'U') {
+                cnt = cnt + 1;
+            }
+        }
+        document.write(cnt);
+    }
+</script>
+<body>
+    Enter a string:<input type="text" id="t1" name="str" /><br>
+    <input type="button" value="vowel check " onclick="check_vowel()" />
+</body>
+</html>

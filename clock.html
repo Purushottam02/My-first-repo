@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>ShowClock</title>
+    <script type="text/javascript">
+        function ShowTime() {
+            var time = new Date()
+            var h = time.getHours()
+            var m = time.getMinutes()
+            var s = time.getSeconds()
+            m = checkTime(m)
+            s = checkTime(s)
+            document.getElementById('txt').value = h + " : " + m + " : " + s
+            t = setTimeout('ShowTime()', 1000)
+        }
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i
+            }
+            return i
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Show Clock!" onClick="ShowTime()">
+    (Please click on this button)
+    <br><br>
+    <input type="text" id="txt">
+</body>
+
+</html>
